@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="102.633">
+    <testcase classname="Amazon invalid sign in" name="Amazon invalid sign in" time="11.873">
+        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
+Then user clicks signin button..............................................passed
+And user enters invalid email...............................................passed
+And clicks continue button..................................................passed
+Then checks that the error message is displayed.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Amazon search" name="Search for product add to basket" time="6.828">
+        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
+Given user searches for "computer"..........................................passed
+When the search results are displayed.......................................passed
+Then the search results has the "computer" in it............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Amazon search" name="Search for product add to basket 2" time="9.459">
+        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
+Given user searches for "flower"............................................passed
+When the search results are displayed.......................................passed
+Then the search results has the "flower" in it..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Check basket total" name="_2" time="36.227">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@id='price_inside_buybox']&quot;}&#10;  (Session info: chrome=79.0.3945.117)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'Esmas-MBP.home', ip: 'fe80:0:0:0:1c61:2754:290a:4aaa%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6ce93b3a82530c895e5f0e3250a1f2f4, findElement {using=xpath, value=//span[@id='price_inside_buybox']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/h8/3g6p1vwn3rq...}, goog:chromeOptions: {debuggerAddress: localhost:62346}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62346/devtoo..., se:cdpVersion: 79.0.3945.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 6ce93b3a82530c895e5f0e3250a1f2f4" type="org.openqa.selenium.NoSuchElementException"><![CDATA[When user goes to Amazon Home Page..........................................passed
+Given user searches for "computer laptop"...................................passed
+Then the search results has the "computer laptop" in it.....................passed
+Given user adds first item to basket........................................failed
+When user checks basket total...............................................skipped
+Then it should match the price of the item added into basket................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@id='price_inside_buybox']"}
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Esmas-MBP.home', ip: 'fe80:0:0:0:1c61:2754:290a:4aaa%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6ce93b3a82530c895e5f0e3250a1f2f4, findElement {using=xpath, value=//span[@id='price_inside_buybox']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/h8/3g6p1vwn3rq...}, goog:chromeOptions: {debuggerAddress: localhost:62346}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62346/devtoo..., se:cdpVersion: 79.0.3945.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6ce93b3a82530c895e5f0e3250a1f2f4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy23.getText(Unknown Source)
+	at stepDefinitions.TC03StepDefinitions.user_adds_to_basket(TC03StepDefinitions.java:18)
+	at ✽.user adds first item to basket(file:///Users/esmayorulmaz/Downloads/proje/AmazonWebPage/src/test/resources/features/TC03.feature:11)
+]]></failure>
+    </testcase>
+    <testcase classname="Amazon Search Feature" name="Second most expensive product contains Nikon D3X" time="14.821">
+        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
+When user searches for "Nikon"..............................................passed
+And sorts the result from highest price to lowest...........................passed
+And clicks second product for details.......................................passed
+Then checks product title contains "Nikon D3100"............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="check the sub menu" name="Check the Computers menu" time="23.128">
+        <failure message="element not interactable&#10;  (Session info: chrome=79.0.3945.117)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'Esmas-MBP.home', ip: 'fe80:0:0:0:1c61:2754:290a:4aaa%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [e0e307f763e442555179c7e753e6a03b, clickElement {id=345d1493-9784-4bfd-8e94-806b82c8c6e8}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/h8/3g6p1vwn3rq...}, goog:chromeOptions: {debuggerAddress: localhost:62906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62906/devtoo..., se:cdpVersion: 79.0.3945.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Element: [[ChromeDriver: chrome on MAC (e0e307f763e442555179c7e753e6a03b)] -&gt; xpath: (//*[text()='Computers'])[2]]&#10;Session ID: e0e307f763e442555179c7e753e6a03b" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[When user goes to Amazon Home Page..........................................passed
+And user clicks to All categories...........................................passed
+And selects Computers.......................................................failed
+Then checks that Computers menu has 15 sub categories.......................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=79.0.3945.117)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Esmas-MBP.home', ip: 'fe80:0:0:0:1c61:2754:290a:4aaa%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e0e307f763e442555179c7e753e6a03b, clickElement {id=345d1493-9784-4bfd-8e94-806b82c8c6e8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/h8/3g6p1vwn3rq...}, goog:chromeOptions: {debuggerAddress: localhost:62906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62906/devtoo..., se:cdpVersion: 79.0.3945.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[ChromeDriver: chrome on MAC (e0e307f763e442555179c7e753e6a03b)] -> xpath: (//*[text()='Computers'])[2]]
+Session ID: e0e307f763e442555179c7e753e6a03b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at stepDefinitions.TC05StepDefinitions.selects_computers(TC05StepDefinitions.java:20)
+	at ✽.selects Computers(file:///Users/esmayorulmaz/Downloads/proje/AmazonWebPage/src/test/resources/features/TC05.feature:10)
+]]></failure>
+    </testcase>
+</testsuite>

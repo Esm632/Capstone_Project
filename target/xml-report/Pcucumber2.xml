@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="105.471">
+    <testcase classname="all listed products contain ..." name="_2" time="26.315">
+        <failure message="element not interactable&#10;  (Session info: chrome=79.0.3945.117)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'Esmas-MBP.home', ip: 'fe80:0:0:0:1c61:2754:290a:4aaa%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [12d7b37a818c21085a90e678a7cf80b5, clickElement {id=f5dd0f10-c3f4-4e87-824e-b0e20342466a}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/h8/3g6p1vwn3rq...}, goog:chromeOptions: {debuggerAddress: localhost:61999}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:61999/devtoo..., se:cdpVersion: 79.0.3945.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Element: [[ChromeDriver: chrome on MAC (12d7b37a818c21085a90e678a7cf80b5)] -&gt; xpath: (//*[text()='Computers'])[2]]&#10;Session ID: 12d7b37a818c21085a90e678a7cf80b5" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[When user goes to Amazon Home Page..........................................passed
+And user clicks to All categories...........................................passed
+And selects Computers.......................................................failed
+And selects Computer Components.............................................skipped
+And selects the Seagate checkbox............................................skipped
+Then verifies that all listed products contain "Seagate" information........skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=79.0.3945.117)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Esmas-MBP.home', ip: 'fe80:0:0:0:1c61:2754:290a:4aaa%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [12d7b37a818c21085a90e678a7cf80b5, clickElement {id=f5dd0f10-c3f4-4e87-824e-b0e20342466a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/h8/3g6p1vwn3rq...}, goog:chromeOptions: {debuggerAddress: localhost:61999}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:61999/devtoo..., se:cdpVersion: 79.0.3945.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[ChromeDriver: chrome on MAC (12d7b37a818c21085a90e678a7cf80b5)] -> xpath: (//*[text()='Computers'])[2]]
+Session ID: 12d7b37a818c21085a90e678a7cf80b5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at stepDefinitions.TC05StepDefinitions.selects_computers(TC05StepDefinitions.java:20)
+	at ✽.selects Computers(file:///Users/esmayorulmaz/Downloads/proje/AmazonWebPage/src/test/resources/features/TC06.feature:10)
+]]></failure>
+    </testcase>
+    <testcase classname="all listed products contain ..." name="_2" time="34.263">
+        <failure message="element not interactable&#10;  (Session info: chrome=79.0.3945.117)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'Esmas-MBP.home', ip: 'fe80:0:0:0:1c61:2754:290a:4aaa%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [569040e122a7152afe55460bbd05df48, clickElement {id=6c33ff2e-d7ff-47fa-9581-f9c184c8a80a}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/h8/3g6p1vwn3rq...}, goog:chromeOptions: {debuggerAddress: localhost:62350}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62350/devtoo..., se:cdpVersion: 79.0.3945.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Element: [[ChromeDriver: chrome on MAC (569040e122a7152afe55460bbd05df48)] -&gt; xpath: (//*[text()='Computers'])[2]]&#10;Session ID: 569040e122a7152afe55460bbd05df48" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[When user goes to Amazon Home Page..........................................passed
+And user clicks to All categories...........................................passed
+And selects Computers.......................................................failed
+And selects Computer Components.............................................skipped
+And selects the first product listed........................................skipped
+And adds to cart............................................................skipped
+Then user clicks to All categories..........................................skipped
+And selects Electronics.....................................................skipped
+And selects Camera & Photo..................................................skipped
+And selects the second product listed.......................................skipped
+And adds to cart............................................................skipped
+And goes to cart............................................................skipped
+Then Verifies that there are 2 items in the cart............................skipped
+And deletes the first item in the cart......................................skipped
+Then Verifies that there are 1 items in the cart............................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=79.0.3945.117)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'Esmas-MBP.home', ip: 'fe80:0:0:0:1c61:2754:290a:4aaa%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [569040e122a7152afe55460bbd05df48, clickElement {id=6c33ff2e-d7ff-47fa-9581-f9c184c8a80a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/h8/3g6p1vwn3rq...}, goog:chromeOptions: {debuggerAddress: localhost:62350}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62350/devtoo..., se:cdpVersion: 79.0.3945.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[ChromeDriver: chrome on MAC (569040e122a7152afe55460bbd05df48)] -> xpath: (//*[text()='Computers'])[2]]
+Session ID: 569040e122a7152afe55460bbd05df48
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at stepDefinitions.TC05StepDefinitions.selects_computers(TC05StepDefinitions.java:20)
+	at ✽.selects Computers(file:///Users/esmayorulmaz/Downloads/proje/AmazonWebPage/src/test/resources/features/TC07.feature:10)
+]]></failure>
+    </testcase>
+    <testcase classname="all listed products contain ..." name="_2" time="9.778">
+        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
+Then opens the signin window................................................passed
+And clicks  Create a List link..............................................passed
+Then Verifies that the title contains "Your List"...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="valid sign in" name="_2" time="10.913">
+        <system-out><![CDATA[Given user goes to Amazon Home Page.........................................passed
+Then user clicks signin button..............................................passed
+And user enters valid email.................................................passed
+And clicks continue button..................................................passed
+Then user enters valid password.............................................passed
+And verifies that Hello, Login text on the sign in button...................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="create a list" name="_2" time="23.695">
+        <system-out><![CDATA[When user goes to Amazon Home Page..........................................passed
+Then user clicks signin button..............................................passed
+Then user enters valid email................................................passed
+Then clicks continue button.................................................passed
+And user enters valid password..............................................passed
+Then user searches for "samsung laptop".....................................passed
+Then selects the first item.................................................passed
+And users clicks add to List button.........................................passed
+And opens to shopping list..................................................passed
+And checks if the product is in the list....................................passed
+Then clicks delete button...................................................passed
+And checks if the product is not in the list................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
